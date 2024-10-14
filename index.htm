@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="Style.css" />
   </head>
   <body>
-    <header id="myheader">
-      <div>
-        <h1>Puppy Lovers Page</h1>
+    <header>
+      <div class="container">
+        <div class="main-title">Puppy Lovers Page</div>
       </div>
     </header>
     <!-- Banner Section -->
-    <section id="banner">
+    <section id="banner-image">
       <img
         src="/images/banner-puppies.jpg"
         alt="Banner with adorable puppies"
@@ -27,38 +27,37 @@
     </section>
 
     <!-- Puppies Section -->
-    <section class="puppies-class">
-      <div class="puppy1">
-        <img src="/images/puppy-1.jpg" alt="Cute puppy number 1" />
-      </div>
-      <div class="missing-puppy">
-        <div class="missing-wraper">
-          <p>Puppy Missing here!!</p>
+    <section class="top-container">
+      <div class="container">
+        <div class="puppy-container">
+          <img src="/images/puppy-1.jpg" alt="Cute puppy number 1" />
         </div>
-      </div>
-      <div class="puppy2">
-        <img src="/images/puppy-2.jpg" alt="Cute puppy number 2" />
+        <div class="puppy-container middle-puppy">
+          <div class="puppy-missing">Puppy Missing here!!!</div>
+        </div>
+        <div class="puppy-container">
+          <img src="/images/puppy-2.jpg" alt="Cute puppy number 2" />
+        </div>
       </div>
     </section>
 
     <!-- More Puppy Images Section -->
-    <section class="addtional-puppy">
-      <div class="fixed-container">
-        <h2>More Puppies</h2>
-        <div class="morepicture">
-          <div class="puppy3">
+    <section class="vertical-puppy-section">
+      <div class="container">
+        <div class="section-title">More Puppies</div>
+        <div class="vertical-puppy-wraper">
+          <div class="puppy-container-vertical left">
             <img src="/images/puppy-3.jpg" alt="" />
           </div>
-          <div class="puppy4">
+          <div class="puppy-container-vertical right">
             <img src="/images/puppy-4.jpg" alt="" />
           </div>
         </div>
       </div>
     </section>
-
     <!-- Footer Section -->
-    <footer class="foot">
-      <p>Developed by: Yosef</p>
+    <footer>
+      <div><div class="credit">Developed by: Yosef</div></div>
     </footer>
   </body>
 </html>

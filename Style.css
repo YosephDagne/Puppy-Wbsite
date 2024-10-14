@@ -1,77 +1,124 @@
-body {
-  background-color: darkgray;
-  padding: auto;
-  border: 10px solid orange;
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 img {
   max-width: 100%;
 }
-.puppies-class {
-  display: flex;
+
+body {
+  background-color: gainsboro;
+  font-family: "Crimson Text", serif;
 }
 
-#myheader {
-  padding-top: 27px;
-  padding-bottom: 24px;
-  text-align: center;
-  background-color: cornflowerblue;
-  color: white;
-}
-
-#banner img {
-  width: 100%;
-}
-#banner {
-  margin-bottom: 84px;
-}
-.puppy1,
-.missing-puppy,
-.puppy2 {
-  width: 33.33%;
-}
-.puppy1 img,
-.missing-puppy img,
-.puppy2 img {
-  width: 100%;
-}
-.foot {
-  background-color: cornflowerblue;
-  text-align: center;
-  margin-top: 75px;
-  padding-top: 100px;
-  padding-bottom: 125px;
-  color: white;
-  font-size: 30px;
-}
-.fixed-container {
-  width: 960px;
+/* Container */
+.container {
   margin: 0 auto;
+  padding: 0 5%;
   width: 100%;
 }
-.morepicture {
-  display: flex;
-}
-.missing-puppy {
-  background-color: #f04d65;
-  margin: 0 1%;
-}
-.missing-wraper {
+
+/* Header */
+header {
+  background-color: #085070;
+  padding: 10% 0;
   text-align: center;
-  font-size: 20px;
-  padding: 80px 30px 25px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.5rem;
 }
-.addtional-puppy {
+
+/* Banner Image */
+#banner-image img {
+  width: 100%;
+  height: auto;
+}
+
+/* Puppy Section Styles */
+.puppy-container img {
+  width: 100%;
+}
+
+/* Vertical Puppy Section */
+.vertical-puppy-wraper {
+  margin-top: 30px;
+}
+
+/* Footer */
+footer {
+  background-color: #085070;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 1rem;
   margin-top: 50px;
 }
-.addtional-puppy h2 {
-  text-align: center;
-  font-size: 40px;
-  margin-bottom: 40px;
+
+/* Media Queries for larger screens */
+@media (min-width: 720px) {
+  .container {
+    width: 680px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+
+  .top-container {
+    padding: 85px 0 65px;
+  }
+
+  .top-container .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .puppy-container {
+    width: 32%;
+  }
+
+  .middle-puppy {
+    display: block;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 10px 0;
+    background-color: lightgray;
+  }
+
+  /* Vertical Puppy Section */
+  .vertical-puppy-wraper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .puppy-container-vertical {
+    width: 48%;
+  }
+
+  .puppy-container-vertical.left {
+    margin-right: 1%;
+  }
+
+  .puppy-container-vertical.right {
+    margin-left: 1%;
+  }
 }
-.puppy3 {
-  margin-right: 30px;
-}
-.puppy4 {
-  margin-left: 30px;
+
+@media (min-width: 1020px) {
+  .container {
+    width: 980px;
+  }
+
+  .puppy-container {
+    width: 30%;
+  }
+
+  .top-container .container {
+    justify-content: space-around;
+  }
+
+  .middle-puppy {
+    font-size: 1.75rem;
+  }
 }
