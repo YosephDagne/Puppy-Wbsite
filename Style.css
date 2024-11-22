@@ -4,23 +4,19 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 img {
   max-width: 100%;
 }
-
 body {
   background-color: gainsboro;
   font-family: "Crimson Text", serif;
 }
-
 /* Container */
 .container {
   margin: 0 auto;
   padding: 0 5%;
   width: 100%;
 }
-
 /* Header */
 header {
   background-color: #085070;
@@ -30,22 +26,24 @@ header {
   font-weight: 700;
   font-size: 2.5rem;
 }
-
 /* Banner Image */
 #banner-image img {
   width: 100%;
   height: auto;
 }
 
+
 /* Puppy Section Styles */
 .puppy-container img {
   width: 100%;
 }
 
+
 /* Vertical Puppy Section */
 .vertical-puppy-wraper {
   margin-top: 30px;
 }
+
 
 /* Footer */
 footer {
